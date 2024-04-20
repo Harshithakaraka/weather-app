@@ -12,7 +12,29 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.app-wrapper {
+  min-height: 100vh; /* Ensure the wrapper takes up the full height of the viewport */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://i.pinimg.com/originals/92/ac/36/92ac3696dee29e29e147826267abf6e8.gif') repeat 0 0; /* Replace 'galaxies.jpg' with your image */
+  background-size: auto;
+  font-family: Arial, sans-serif; /* Adjust font-family if needed */
+  /* Adjust animation duration as needed */
 
+}
+@keyframes moveGalaxies {
+  from {
+      background-position: 0 0;
+  }
+  to {
+      background-position: 10000px 0px; /* Adjust the distance galaxies move */
+  }
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
